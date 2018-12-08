@@ -1,0 +1,25 @@
+{
+  "name": "tg-gh-prs-update",
+  "version": "1.0.0",
+  "description": "update github pull requests with master",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "todgru",
+  "license": "NONE",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "cli-table3": "0.5.1",
+    "console-log-level": "1.4.0",
+    "tg-gh": "../tg-gh"
+  },
+  "devDependencies": {
+    "eslint": "5.8.0",
+    "eslint-config-prettier": "3.1.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-unicorn": "6.0.1",
+    "prettier": "1.15.2"
+  }
+}

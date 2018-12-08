@@ -1,0 +1,7 @@
+# /node_modules/* is a default rule, but only counts for the project-root
+**/node_modules/*
+**/coverage/*
+**/.nyc_output/*
+**/_dist/*
+**/docs/*
+hypnos-server/src-docs
