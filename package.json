@@ -12,7 +12,7 @@
     "chalk": "2.4.1",
     "cli-table3": "0.5.1",
     "console-log-level": "1.4.0",
-    "tg-gh": "../tg-gh"
+    "tg-gh": "0.0.1"
   },
   "devDependencies": {
     "eslint": "5.8.0",
