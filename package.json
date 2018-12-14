@@ -1,0 +1,38 @@
+{
+  "name": "tg-gh-cli",
+  "version": "0.0.1",
+  "description": "tg gh cli helpers",
+  "main": "cli.js",
+  "bin": {
+    "tg-gh": "cli.js",
+    "tg-gh-prs-update": "cli-prs-update.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "todgru",
+  "license": "MIT",
+  "repository": "togru/gh-pr-update",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "cli-table3": "0.5.1",
+    "console-log-level": "1.4.0",
+    "tg-gh-lib": "git+ssh://git@github.com/todgru/tg-gh-lib.git"
+  },
+  "devDependencies": {
+    "eslint-config-tg": "git+ssh://git@github.com/todgru/eslint-config-tg.git"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-tg"
+  },
+  "keywords": [
+    "github",
+    "pull",
+    "request",
+    "cli",
+    "command",
+    "line",
+    "merge",
+    "master"
+  ]
+}
