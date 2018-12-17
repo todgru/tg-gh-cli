@@ -13,7 +13,12 @@ npm install -g tg-gh-cli
 
 ## Usage
 
-Update repository prs:
+List pull requests:
 ```
-tg-gh-prs-update todgru/my-repo
+tg-gh-prs username/my-repo
+```
+
+Update pull request brances with master:
+```
+tg-gh-prs-update username/my-repo
 ```
