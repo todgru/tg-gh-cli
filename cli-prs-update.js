@@ -13,7 +13,8 @@ const table = new Table({
 const status = code => {
   if (code === 201) return chalk.bold.keyword("green")("updated");
   if (code === 204) return chalk.bold.keyword("blue")("noop");
-  return chalk.bold.keyword("red")("error");
+  if (code === 409) return chalk.bold.keyword("red")("merge conflict");
+  return chalk.bold.keyword("red")("unknown");
 };
 const tableRow = a => [
   chalk.red.bold(a.p.number),
@@ -31,6 +32,7 @@ function pullRequestsUpdate() {
       pullCount = pulls.length;
       return pulls.map(async p => {
         try {
+          // if successful, this returns only a status code, 20x
           const status = await gh.merges(
             "master",
             p.head.ref,
@@ -38,7 +40,8 @@ function pullRequestsUpdate() {
           );
           return { p, e: "", status };
         } catch (e) {
-          return { p, e, status: "error" };
+          // if failure, then this returns a full response object
+          return { p, e, status: e.statusCode };
         }
       });
     })
