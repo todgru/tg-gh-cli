@@ -1,10 +1,11 @@
 {
   "name": "tg-gh-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "tg gh cli helpers",
   "main": "cli.js",
   "bin": {
     "tg-gh": "cli.js",
+    "tg-gh-prs": "cli-prs.js",
     "tg-gh-prs-update": "cli-prs-update.js"
   },
   "scripts": {
