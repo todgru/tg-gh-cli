@@ -1,6 +1,6 @@
 {
   "name": "tg-gh-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "tg gh cli helpers",
   "main": "cli.js",
   "bin": {
