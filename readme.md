@@ -18,7 +18,7 @@ List pull requests:
 tg-gh-prs username/my-repo
 ```
 
-Update pull request brances with master:
+Update pull request branches with master:
 ```
 tg-gh-prs-update username/my-repo
 ```

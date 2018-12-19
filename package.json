@@ -1,6 +1,6 @@
 {
   "name": "tg-gh-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "tg gh cli helpers",
   "main": "cli.js",
   "bin": {
@@ -13,7 +13,7 @@
   },
   "author": "todgru",
   "license": "MIT",
-  "repository": "togru/gh-pr-update",
+  "repository": "todgru/tg-gh-cli",
   "dependencies": {
     "chalk": "2.4.1",
     "cli-table3": "0.5.1",
